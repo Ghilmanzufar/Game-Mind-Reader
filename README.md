@@ -1,31 +1,31 @@
-## Mind Reader Game
+# Mind Reader Game
 **Mind Reader is a game where you play against the computer, similar to the rock-paper-scissors concept. You can choose either 1 or 0, and the computer will try to guess your choice using machine learning. The first one to reach 10 points wins!**
 
-# Game Idea
+## Game Idea
 In this game, you and the computer take turns guessing each other's choices. The game flow is simple:
 - You choose either 1 or 0.
 - The computer attempts to guess your choice based on your previous choices.
 - If the computer guesses correctly, it scores a point. If it guesses wrong, you score a point.
 - The first player to reach 10 points is declared the winner.
-# Features
+## Features
 - Player and Computer Guessing: You make a choice (1 or 0), and the computer tries to predict it using statistical probabilities based on your history of previous choices.
 - Scoreboard: Tracks both your score and the computer's score in real time using progress bars.
 - Game Over Message: Displays a win or lose message at the end of the game based on the result.
 - Simple Machine Learning: The computer uses a simple probability-based model (binomial distribution) to make its guess.
-# Game Interface
+## Game Interface
 The game interface consists of:
 - Two buttons: One for choosing 0 and one for choosing 1.
 - Scoreboard: Displays the current scores of both the player and the computer.
 - Final Message: Shows a "You Win!" or "You Lose!" message depending on the outcome of the game.
-# Tools & Libraries Used
+## Tools & Libraries Used
 - ipywidgets: For creating interactive widgets such as buttons and progress bars.
 - NumPy: For generating random predictions from a binomial distribution for the computer's guesses.
-# How the Game Works
+## How the Game Works
 - Choose a Number: You select either 0 or 1 by clicking the corresponding button.
 - Computer Guesses: Based on your previous choices, the computer tries to predict your next choice using a probability model.
 - Score Update: If the computer guesses correctly, it scores a point. Otherwise, you score a point.
 - End of Game: The game continues until either the player or the computer reaches 10 points. A final message is displayed at the end indicating the winner.
-# Code Breakdown
+## Code Breakdown
 1. Importing Libraries:
     ```
     from ipywidgets import *
